@@ -15,14 +15,14 @@ st.markdown(
 )
 
 #pages
-menu = ["Home","Singup","Login"]
+menu = ["Home","Signup","Login"]
 choice = st.sidebar.selectbox("Menu",menu)
 if choice=="Home":
     testp="<p style='font-size:20px'>SafePass is the easier, safer way to unlock your digital world. It’s an application you can download on all your PC to remove the hassle of passwords. Get started by logging in to the Master password app using unique factors image. From there, the app works quietly in the background to make your current passwords stronger, remembers them and instantly logs you in so you don’t have to. </p>"
     st.markdown(testp, unsafe_allow_html=True)
     st.image("main.gif")
     
-if choice=="Singup":
+if choice=="Signup":
     st.text("Welcome Signup")
     Fname=st.text_input("First Name")
     Lname=st.text_input("Last Name")
