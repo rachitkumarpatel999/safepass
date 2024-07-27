@@ -1,6 +1,6 @@
 numpy
 streamlit
 pillow==9.4.0
-streamlit-image-select==0.5.1
+streamlit-image-select
 pandas
 opencv-python
