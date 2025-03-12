@@ -30,7 +30,7 @@ def share(text):
             # Load a TrueType font
             font = ImageFont.truetype('arial.ttf', font_size)  
             # Calculate the text position
-            text_width, text_height = draw.textsize(text, font=font)
+            bbox = draw.textbbox((0, 0), text, font=font) text_width, text_height = bbox[2] - bbox[0], bbox[3] - bbox[1]
             x = (image_width - text_width) // 2
             y = (image_height - text_height) // 2   
             # Draw the text on the image
